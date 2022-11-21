@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+<body onload="getDoggos()">
+    <div class="btns">
+        <button onclick="toggleSort()">Toggle Sorting</button><br>
+        <select id="filter">
+            <option value="Toy">Toy</option>
+            <option value="Hound">Hound</option>
+            <option value="Terrier">Terrier</option>
+            <option value="Working">Working</option>
+            <option value="Mixed">Mixed</option>
+            <option value="Non-Sporting">Non-Sporting</option>
+            <option value="Sporting">Sporting</option>
+            <option value="Herding">Herding</option>
+        
+        </select>
+        <button onclick="filter()">Filter by breed group</button>
+    </div>
+    <div class="pagination" id="pagination"> </div>
+    <div id="main" class="main"></div>
+
+</body>
+</html>
